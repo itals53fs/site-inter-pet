@@ -1,0 +1,86 @@
+/* tem que ver a font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+:root {
+  --color-grean: #50fa7b;
+  --color-rockt: #7159c1;
+}
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#conteudo{
+
+  text-align: center;
+  padding: 10px;
+  margin: 10px 5px;
+}
+#conteudo a{
+color: var(--color-grean);
+}
+
+h1{
+  font-size: 40px;
+  margin: 20px 0px;
+}
+h2{
+  font-size: 30px;
+  margin: 20px 0px;
+}
+h3{
+  font-size: 20px;
+  margin: 20px 0px;
+  color: #7e8194;
+}
+.icon{
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  border: solid 2px var(--color-grean);
+  padding: 30px;
+  margin: 10px;
+}
+
+.bloco{
+  margin: 30px 10px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+#conograma{
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  list-style: none;
+  font-weight: bold;
+
+}
+
+#conograma li{
+  margin: 10px auto;
+  background: var(--color-rockt);
+  border-radius: 5px;
+  color: white
+}
+#conograma span{
+  color: rgb(34, 33, 33);
+  margin-left: 10px;
+}
+.title-block{
+  text-align: center;
+  border-bottom: solid 1px rgb(61, 59, 59);
+  color: #7e8194;
+  font-size: 22px;
+}
+
+.roda-pe{
+list-style: none;
+text-align: center;
+}
+.roda-pe li{
+  display: inline-block;
+  margin: 10px 15px;
+
+}
+.roda-pe img{
+  width: 60px;
+  }

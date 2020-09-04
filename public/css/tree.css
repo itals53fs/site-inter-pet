@@ -1,0 +1,82 @@
+.tree * {
+  list-style-type: none;
+  color:white;
+  margin: 10px;
+  cursor: pointer;
+}
+.tree span:hover{
+  opacity: 0.7;
+  transition: 700ms;
+}
+.tree li a {
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.tree span{
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+.tree p{
+  border-radius: 10px;
+}
+
+.tree ul {
+  padding-left: 25px;
+}
+.tree p {
+  text-align: center;
+}
+
+ul.tree, .tree li {
+  padding-left: 0px;
+  padding-top: 5px;
+}
+
+ul.tree, ul.tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+
+ul.tree ul {
+  margin-left: 10px;
+}
+
+ul.tree li {
+  margin: 0;
+  margin: 0 9px;
+  padding: 0 7px;
+  border-left:3px solid #5e35b1;
+  padding-top: 20px;
+  border-radius: 10px;
+  
+}
+
+ul.tree li:last-child {
+  border-left:none;
+}
+
+ul.tree li:before {
+  position:relative;
+  top:-0.3em;
+  height:1em;
+  /* width:12px; */
+  color:white;
+  border-bottom:3px solid #5e35b1;
+  content:"";
+  display:inline-block;
+  left:-7px;
+}
+
+ul.tree li:last-child:before {
+  border-left:3px solid #5e35b1;  
+}
+ul.nav-list{
+  font-family:monospace;
+  font-size: 20px;
+}
