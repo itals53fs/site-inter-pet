@@ -84,3 +84,21 @@ text-align: center;
 .roda-pe img{
   width: 60px;
   }
+
+#iframe{
+ width: 60%;
+ height:500px;
+
+}
+
+p#sobre{
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+@media(max-width:600px){
+  #iframe{
+    width: 100%;
+  }
+}

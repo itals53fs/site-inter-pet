@@ -10,115 +10,125 @@
   <link rel="stylesheet" href="public/css/layout.css">
   <link rel="stylesheet" href="public/css/tree.css">
   <link rel="icon" href="public/img/icon.png">
-  <title>Menu lateral</title>
+  <title></title>
 </head>
-<header>
-  <label for="checkbox" id="menu">
-    <div id="botao" data-js="button"></div>
-  </label>
-  <input type="checkbox" id="checkbox">
-  <nav id="nav-lateral">
-    <ul>
-      <li><a href="#"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li><a href="#"> </span> O PET</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>Inscreva-se</a></li>
-    </ul>
-  </nav>
-  <div id="logo">
-    <img src="public/img/icon.png">
-  </div>
-</header>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div id="conteudo" class="col-sm-6">
-
-        <h1>Inter PET</h1>
-        <img src="public/img/icon.png" class="icon">
-        <h3>A palavra chave é a Conexão</h3>
-        <h2>PET Conexão dos Saberes - <a href="#">UFVJM</a></h2>
-      </div>
-
-      <div class="bloco col-sm-5">
-        <ol id="conograma">
-          <h3 class="title-block">Conograma</h3>
-          <li>Inscrições: <span>20 a 25 de Setembro</span> </li>
-          <li>Abertura: <span>12 de Outubro</span> </li>
-          <li>Finalização: <span> 15 de Outubro</span></li>
-        </ol>
-      </div>
-
-      <div class="bloco col-sm-5">
-        <h3 class="title-block">Programação</h3>
-        <ul class="nav-list tree" data-js="tree">
-          <span>Programação</span>
-          <li>
-            <span data-js="tree" class="resposive"><a href="#final">Abertura</a></span>
-            <ul>
-              <li>
-                <p>As 19 horas, local: Discord As 19 horas, local: Discord As 19 horas,
-                  local: Discord As 19 horas, local: Discord</p>
-              </li>
-              <li>
-                <p>Atente com os horarios</p>
-              </li>
-              <li>As 19 horas, local: Discord</li>
-              <li style="display: none;"></li>
-            </ul>
-          </li>
-          <li>
-            <span data-js="tree"><a href="#final">Meio</a></span>
-            <ul>
-              <li>
-                <span data-js="tree"><a href="#final">Conteudo</a></span>
-                <ul>
-                  <li>tals</li>
-                  <li style="display: none;"></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <span data-js="tree"><a href="#final">Final</a></span>
-            <ul>
-              <li>aaaaa</li>
-              <li>aaaaaaaa</li>
-              <li style="display: none;"></li>
-            </ul>
-          </li>
-        </ul>
-        <script src=""></script>
-        <div id="final" class="none"></div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="bloco col-ms-12">
-        <h3 class="title-block">Sobre o Evento</h3>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="roda-pe">
-      <h3 class="title-block">Roda pé</h3>
+  <header>
+    <label for="checkbox" id="menu">
+      <div id="botao" data-js="button"></div>
+    </label>
+    <input type="checkbox" id="checkbox">
+    <nav id="nav-lateral">
       <ul>
-        <li><a href="#"><img src="public/img/icon.png"></a></li>
-        <li><a href="#"><img src="public/img/icon.png"></a></li>
-        <li><a href="#"><img src="public/img/icon.png"></a></li>
-        <li><a href="#"><img src="public/img/icon.png"></a></li>
+        <li><a href="/"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a data-js="nav" href="public/views/pets.html"> </span> Os PET's</a></li>
+        <li><a data-js="nav" href="public/views/inscricao.html"><span
+              class="glyphicon glyphicon-pencil"></span>Inscreva-se</a></li>
       </ul>
+    </nav>
+    <div id="logo">
+      <img src="public/img/icon.png">
     </div>
-  </footer>
+  </header>
+  <section id="content">
+    <div class="container">
+      <div class="row">
+        <div id="conteudo" class="col-sm-6">
+
+          <h1>Inter PET</h1>
+          <img src="public/img/icon.png" class="icon">
+          <h3>A palavra chave é a Conexão</h3>
+          <h2>PET Conexão dos Saberes - <a href="#">UFVJM</a></h2>
+        </div>
+
+        <div class="bloco col-sm-5">
+          <ol id="conograma">
+            <h3 class="title-block">Conograma</h3>
+            <li>Inscrições: <span>20 a 25 de Setembro</span> </li>
+            <li>Abertura: <span>12 de Outubro</span> </li>
+            <li>Finalização: <span> 15 de Outubro</span></li>
+          </ol>
+        </div>
+
+        <div class="bloco col-sm-5">
+          <h3 class="title-block">Programação</h3>
+          <ul class="nav-list tree" data-js="tree">
+            <span>Programação</span>
+            <li>
+              <span data-js="tree" class="resposive"><a href="#abertura">Abertura</a></span>
+              <ul>
+                <li>
+                  <p id="abertura">As 19 horas, local: Discord As 19 horas, local: Discord As 19 horas,
+                    local: Discord As 19 horas, local: Discord</p>
+                </li>
+                <li>
+                  <p>Atente com os horarios</p>
+                </li>
+                <li>As 19 horas, local: Discord</li>
+                <li style="display: none;"></li>
+              </ul>
+            </li>
+            <li>
+              <span data-js="tree"><a href="#final">Meio</a></span>
+              <ul>
+                <li>
+                  <span data-js="tree"><a href="#final">Conteudo</a></span>
+                  <ul>
+                    <li>tals</li>
+                    <li style="display: none;"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span data-js="tree"><a href="#final">Final</a></span>
+              <ul>
+                <li>aaaaa</li>
+                <li>aaaaaaaa</li>
+                <li style="display: none;"></li>
+              </ul>
+            </li>
+          </ul>
+          <script src=""></script>
+          <div id="final" class="none"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="bloco col-ms-12">
+          <h3 class="title-block">Sobre o Evento</h3>
+          <p id="sobre">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercício ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in volupté velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+      <footer>
+        <div class="roda-pe">
+          <h3 class="title-block">Roda pé</h3>
+          <ul>
+            <li><a href="#"><img src="public/img/icon.png"></a></li>
+            <li><a href="#"><img src="public/img/icon.png"></a></li>
+            <li><a href="#"><img src="public/img/icon.png"></a></li>
+            <li><a href="#"><img src="public/img/icon.png"></a></li>
+          </ul>
+        </div>
+      </footer>
+  <script src="public/src/tamplate-enge.js"></script>
   <script src="public/src/js.js"></script>
   <script src="public/src/tree.js"></script>
-</body>
-<footer>
+  <script src="public/src/ajax.js"></script>
 
-</footer>
+</body>
 
 </html>
