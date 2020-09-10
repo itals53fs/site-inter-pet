@@ -1,19 +1,36 @@
 
-(function(){
+(function () {
   'use strict'
   let $button = document.querySelector('[data-js="button"]');
+  let $body = document.querySelector('section');
 
-  
-  $button.addEventListener('click',display, false);
-
-  /* $button.textContent = '-' */
+  let $nav = document.querySelector('[data-js="navtrasfrome"]');
   $button.setAttribute('class', 'glyphicon glyphicon-minus')
-  function display(){
-    if($button.getAttribute('class') == 'glyphicon glyphicon-minus' ){
-        return $button.setAttribute('class', 'glyphicon glyphicon-remove');
+
+  $button.addEventListener('click', display, false);
+  $body.addEventListener('click', displayBody, false);
+
+  $nav.setAttribute('class', 'displayNormal');
+  function display() {
+    if ($button.getAttribute('class') == 'glyphicon glyphicon-minus') {
+      $nav.setAttribute('class', 'displayZero');
+      $button.setAttribute('class', 'glyphicon glyphicon-remove')
     }
-    $button.setAttribute('class', 'glyphicon glyphicon-minus')
-    
+    else {
+      $button.setAttribute('class', 'glyphicon glyphicon-minus')
+      $nav.setAttribute('class', 'displayNormal');
+    }
+
   }
 
+  function displayBody() {
+
+    if ($nav.getAttribute('class') == 'displayZero' && $button.getAttribute('class') == 'glyphicon glyphicon-remove') {
+      $nav.setAttribute('class', 'displayNormal')
+      $button.setAttribute('class', 'glyphicon glyphicon-minus');
+    }
+    console.log($nav.style.left)
+    console.log($button.getAttribute('class'))
+
+  }
 })();

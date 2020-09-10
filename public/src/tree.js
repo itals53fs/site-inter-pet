@@ -1,7 +1,6 @@
 (function(){
   document.querySelectorAll('[data-js="tree"]').forEach((element)=>{
       const ul = element.nextElementSibling;
-      console.log(ul)
       ul.style.display ='none';
     })
 

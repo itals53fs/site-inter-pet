@@ -102,3 +102,28 @@ p#sobre{
     width: 100%;
   }
 }
+
+.img-circo{
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border: solid 2px var(--color-rockt);
+  display: inline-block;
+}
+.pet-membros{
+  display: inline-block;
+  text-align: center;
+  width: 75px;
+  margin: 5px 10px;
+  list-style: none;
+}
+.img-pets{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: solid 2px var(--color-grean);
+   float: right;
+   margin-top: -10px;
+}
+.pets{
+}
