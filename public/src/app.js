@@ -19,10 +19,11 @@
     let imgPet = document.createElement('img');
     let ul = document.createElement('ul');
     let h4 = document.createElement('h4');
-
-    title.textContent = data.title;
+  
+    title.textContent = data.title || '.';
     txt.textContent = data.txt;
-    imgPet.src = data.imgpet;
+    
+    imgPet.src = data.imgpet || '../img/fundo.jpeg';
     h4.textContent = 'Integrantes'
 
     ul.setAttribute('class', 'listStyle')
@@ -36,8 +37,8 @@
       let nome = document.createElement('span');
       let img = document.createElement('img');
       img.setAttribute('class', 'img-circo');
-      nome.textContent = item.name;
-      img.src = item.img;
+      nome.textContent = item.name || '.';
+      img.src = item.img ||  '../img/fundo.jpeg';
 
       let li = document.createElement('li');
       li.setAttribute('class', 'pet-membros');
@@ -53,14 +54,18 @@
     return div;
   }
 
-  let petConexao = {
-    title: 'PET Conexão dos sabetes',
-    imgpet: '../img/photo.jpg',
+  let conexao = {
+    title: 'PET Conexão dos Saberes',
+    imgpet: '',
     txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.',
     members: [
+      { name: 'Tales', img: '../img/tales.png' },
       { name: '', img: '' },
+      { name: '', img: '' },
+      { name: 'Tales', img: '../img/tales.png' },
+      { name: 'Tales', img: '../img/tales.png' },
     ],
     tutor: { tutor: '', img: '' },
   }
-  $pets.appendChild(frag(petConexao));
+  $pets.appendChild(frag(conexao));
 })();
