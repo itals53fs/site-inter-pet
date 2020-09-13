@@ -14,7 +14,7 @@ input#checkbox{
 } */
 
 nav#nav-lateral{
- width: 50%;
+ width: 70%;
  height: 200px;
  background-color: #000000b3;
  position: absolute;
@@ -89,7 +89,7 @@ label#menu{
   left: 0px;
 }
 .displayNormal{
-  left: -50%;
+  left: -70%;
 }
 @media(min-width:600px){
   .displayNormal{
@@ -146,13 +146,13 @@ label#menu{
   text-align: center;
   background-color: var(--color-rockt);
   margin: 2px;
-  padding: 20px 8px 8px;
+  padding: 14px 10px 6px 9px;
   text-align-last: center;
   font-size: 20px;
   font-weight: 900;
   cursor: pointer;
   transition: all 0.5s;
-  
+  font-size: 30px;
 }
 #botao:hover{
 background-color: var(--color-grean);

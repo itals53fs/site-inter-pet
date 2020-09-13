@@ -29,8 +29,20 @@
       $nav.setAttribute('class', 'displayNormal')
       $button.setAttribute('class', 'glyphicon glyphicon-minus');
     }
-    console.log($nav.style.left)
-    console.log($button.getAttribute('class'))
-
   }
+
+  let data = new Date()
+  let $spanP = document.querySelectorAll('span[data-js="checkbox"]');
+  Array.prototype.forEach.call($spanP, function(item, index){
+    if(data.getDate() >= 12 && data.getHours() >= 10 && index == 0){
+      item.setAttribute('class', 'glyphicon glyphicon-ok check-list');
+    }
+    if(data.getDate() >= 12 && data.getHours() >= 10 && index == 1){
+      item.setAttribute('class', 'glyphicon glyphicon-ok check-list');
+    }
+    if(data.getDate() >= 12 && data.getHours() >= 10 && index == 2){
+      item.setAttribute('class', 'glyphicon glyphicon-ok check-list');
+    }
+  })
+  
 })();

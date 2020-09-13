@@ -39,22 +39,23 @@ let $span = document.querySelectorAll('ul[data-js="tree"]');
         item.style.backgroundColor = colors[4]
       }
       if(index>0){
-      item.firstElementChild.style.backgroundColor = colors[0]
-      let segundaCamada = item.firstElementChild.nextElementSibling.children;
-      Array.prototype.forEach.call(segundaCamada, (e)=>{
-        e.style.borderColor = colors[0];
-        let terceiracamada = e.children;
-
-        Array.prototype.forEach.call(terceiracamada, (e, i)=>{
-         if(i===0)
-         e.style.backgroundColor = colors[3]
-         
-         Array.prototype.forEach.call(e.children, (e, i)=>{
-          if(i===0){
-            e.style.color = colors[4]
-          }
+        item.firstElementChild.style.backgroundColor = colors[0]
+        let segundaCamada = item.firstElementChild.nextElementSibling.children;
+        Array.prototype.forEach.call(segundaCamada, (e)=>{
+          e.style.borderColor = colors[0];
+          let terceiracamada = e.children;
           
-         })
+          Array.prototype.forEach.call(terceiracamada, (e, i)=>{
+            if(i===0)
+            e.style.backgroundColor = colors[3]
+            
+  /*           Array.prototype.forEach.call(e.children, (e, i)=>{
+           if(i===0){
+             e.style.color = colors[4]
+             console.log(e)
+          } 
+          
+         })*/
         })
       })
     }

@@ -37,7 +37,7 @@
       let nome = document.createElement('span');
       let img = document.createElement('img');
       img.setAttribute('class', 'img-circo');
-      nome.textContent = item.name || '.';
+      nome.textContent = item.name || 'Fulano de tal';
       img.src = item.img ||  '../img/fundo.jpeg';
 
       let li = document.createElement('li');
@@ -59,13 +59,33 @@
     imgpet: '',
     txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.',
     members: [
-      { name: 'Tales', img: '../img/tales.png' },
+      { name: 'Ana Paula Nunes', img: '' },
+      { name: 'Bianca Bejamim', img: '../img/bianca.jpeg' },
+      { name: 'Diana Alves', img: '../img/diana.jpeg' },
+      { name: 'Natania Luiza', img: '../img/natania.jpg' },
+      { name: 'Tales Félix', img: '../img/tales.png' },
+      { name: 'Tiago Mercês', img: '../img/tiago.jpg' },
+    ],
+    tutor: { tutor: '', img: '' },
+  }
+  let biologia = {
+    title: 'PET Biologia',
+    imgpet: '',
+    txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.',
+    members: [
       { name: '', img: '' },
       { name: '', img: '' },
-      { name: 'Tales', img: '../img/tales.png' },
-      { name: 'Tales', img: '../img/tales.png' },
+      { name: '', img: '' },
+      { name: '', img: '' },
+      { name: '', img: '' },
+      { name: '', img: '' },
     ],
     tutor: { tutor: '', img: '' },
   }
   $pets.appendChild(frag(conexao));
+  $pets.appendChild(frag(biologia));
+  $pets.appendChild(frag(conexao));
+  $pets.appendChild(frag(biologia));
+  $pets.appendChild(frag(conexao));
+
 })();
