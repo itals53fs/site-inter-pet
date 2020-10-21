@@ -46,8 +46,9 @@ let $span = document.querySelectorAll('ul[data-js="tree"]');
           let terceiracamada = e.children;
           
           Array.prototype.forEach.call(terceiracamada, (e, i)=>{
-            if(i===0)
-            e.style.backgroundColor = colors[3]
+            if(i===0){
+              e.style.backgroundColor = colors[3];
+            }
             
   /*           Array.prototype.forEach.call(e.children, (e, i)=>{
            if(i===0){

@@ -140,24 +140,41 @@ label#menu{
 }
 
 #botao{
-  width: 40px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
   border-radius: 7px;
   text-align: center;
   background-color: var(--color-rockt);
-  margin: 2px;
-  padding: 14px 10px 6px 9px;
-  text-align-last: center;
-  font-size: 20px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: all 0.5s;
   font-size: 30px;
+  cursor: pointer;
 }
 #botao:hover{
 background-color: var(--color-grean);
 }
+#botao span{
+  right: 5px;
+  border-bottom: solid 5px white;
+  width: 40px;
+  margin-top: 5px;
+  position: absolute;
+  top: 17px;
 
+}
+.none{
+  opacity: 0;
+}
+.inline{
+  display: inline;
+  transition: 0.5s;
+}
+.rotate0{
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.rotate1{
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
 .icon{
 width: 150px;
 height: 150px;

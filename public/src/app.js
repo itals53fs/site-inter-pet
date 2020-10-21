@@ -3,7 +3,7 @@
 
   let $pets = document.querySelector('[data-js="membros"]');
 
-
+/*
   let conexao = {
     title: 'PET Conexão dos Saberes',
     imgpet: '',
@@ -22,15 +22,33 @@
     ],
     tutor: { tutor: '', img: '' },
   }
-  let biologia = new Pets('PET Biologia', 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
+  */
+  let conexao = new Pets('PET Conexão dos Saberes', 'Lorem ipsum dolor sit amet,consectetur'+
+    'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
   '',
   [
-    { name: 'ok' },
-    { name: '' },
-    { name: '' },
-    { name: '' },
-    { name: '' },
+    { name: 'Ana Paula Nunes'},
+    { name: 'Bianca Bejamim'},
+    { name: 'Crislaine mistica'},
+    { name: 'Diana Alves'},
+    { name: 'Letícia Lana'},
+    { name: 'Natania Luiza'},
+    { name: 'Raul Otoni'},
+    { name: 'Tais Monica'},
+    { name: 'Tales Félix',},
+    { name: 'Tiago Mercês'},
   ]
+)
+let biologia = new Pets('PET Biologia', 'Lorem ipsum dolor sit amet,consectetur'+
+'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
+'',
+[
+{ name: 'ok' },
+{ name: '' },
+{ name: '' },
+{ name: '' },
+{ name: '' },
+]
 )
 let estrategias = new Pets('PET Estratégias', 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
 '',
@@ -63,7 +81,7 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
 ]
 )
 
-  $pets.appendChild(frag(conexao));
+  $pets.appendChild(fragDemais(conexao));
   $pets.appendChild(fragDemais(biologia));
   $pets.appendChild(fragDemais(estrategias));
   $pets.appendChild(fragDemais(quimica));

@@ -11,23 +11,27 @@
   <link rel="stylesheet" href="public/css/tree.css">
   <link rel="icon" href="public/img/icon.png">
   <title>HOME</title>
-  <div style="display: none;">
-    <h1>Inter PET UFVJM</h1>
-    <h2>PET Conexão dos Saberes</h2>
-  </div>
 </head>
 
 <body>
   <header>
+    <div style="display: none;">
+      <h1>Inter PET UFVJM</h1>
+      <h2>PET Conexão dos Saberes</h2>
+    </div>
     <label for="checkbox" id="menu">
-      <div id="botao" data-js="button"></div>
+      <div id="botao" data-js="button">
+        <span></span>
+        <span class="inline"></span>
+        <span></span>
+      </div>
     </label>
     <input type="checkbox" id="checkbox">
     <nav id="nav-lateral" data-js="navtrasfrome">
       <ul>
         <li><a href="/"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
         <li><a href="public/views/pets.html"> </span> PET's</a></li>
-        <li><a data-js="nav" href="public/views/inscricao.html"><span
+        <li><a href="public/views/inscricao.html"><span
               class="glyphicon glyphicon-pencil"></span>Inscreva-se</a></li>
       </ul>
     </nav>
@@ -40,17 +44,16 @@
     <div class="flex-content">
       <div id="conteudo" class="col-sm-5">
 
-        <h1>Inter PET</h1>
+        <h1>INTERPET UFVJM</h1>
         <img src="public/img/icon.png" class="icon">
         <h3>A palavra chave é a Conexão</h3>
         <h2>PET Conexão dos Saberes - <a href="http://portal.ufvjm.edu.br" target="_blank">UFVJM</a></h2>
       </div>
       <div class="bloco col-sm-5">
-        <h3 class="title-block">Conograma</h3>
+        <h3 class="title-block">Cronograma</h3>
         <ol id="conograma">
-          <li>Inscrições: <span>20 a 25 de Setembro</span> </li>
-          <li>Abertura: <span>12 de Outubro</span> </li>
-          <li>Finalização: <span> 15 de Outubro</span></li>
+          <li>Inscrição: <span>25 de Outubro a 01 de Novembro</span> </li>
+          <li>Abertura: <span>07 a 08 de Novembro</span> </li>
         </ol>
       </div>
     </div>
@@ -62,14 +65,12 @@
         <span class="icon-block glyphicon glyphicon-info-sign"></span>
         <h3 class="title-block">Sobre o Evento</h3>
         <p id="sobre">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercício ullamco laboris
-          nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in volupté velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit
-          anim id est laborum.
+          O interpet é uma reunião entre todos os pets presente na universidade. O momento propicia, além da integração
+          entre os grupos, a discussão de assuntos de relevância ao PET.
         </p>
+
+        <p id="sobre">O objetivo é então ter um espaço destinado à discussão da legislação do programa além do planejamento de
+          atividades que integrem e que sejam de interesses dos grupos.</p>
       </div>
 
       <div class="bloco col-sm-5">
@@ -83,6 +84,7 @@
               <li>
                 <p>Abertura do Evento</p>
                 <p class="p-background">
+                  <img src="" alt="">
                   19 horas, PET Conexão dos Saberes.
                 </p>
               </li>
@@ -163,7 +165,6 @@
     </div>
   </footer>
   <script src="public/src/js.js"></script>
-  <script src="public/src/tamplate-enge.js"></script>
   <script src="public/src/tree.js"></script>
 </body>
 

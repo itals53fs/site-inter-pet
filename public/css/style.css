@@ -101,7 +101,25 @@ text-align: center;
 #iframe{
   width: 100%;
   height: 800px;
-}
+
+  animation-name: up;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+    
+  }
+  @keyframes up{
+    from{
+      opacity: 0;
+      
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 
 p#sobre{
   font-size: 18px;
@@ -176,70 +194,74 @@ p#sobre{
   border-radius: 10px;
   box-shadow: 2px 5px  #7159c1;
 }
-.p-background{
+  
+@media(min-width: 768px){
+  .flex-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloco{
+    width: 40%;
+  }
+  .conteudo{
+    width: 60%;
+  }
+  .flex-content-pets{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+  }
 }
-  
-  @media(min-width: 768px){
-    .flex-content{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .bloco{
-      width: 40%;
-    }
-    .conteudo{
-      width: 60%;
-    }
-    .flex-content-pets{
-      display: flex;
-      justify-content: center;
-      flex-flow: wrap;
-      align-items: center;
-    }
-  }
-  span.check-list{
-    color: #fbc02d;
-  }
+span.check-list{
+  color: #fbc02d;
+}
 
-  @font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.ttf') format('truetype');
-  }
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
 
-  .glyphicon {
-    position: relative;
- 
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-  
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .glyphicon-home:before {
-    content: "\e021";
-  }
-  .glyphicon-pencil:before {
-    content: "\270f";
-  }
-  .glyphicon-plus-sign:before {
-    content: "\e081";
-  }
-  .glyphicon-minus-sign:before {
-    content: "\e082";
-  }
-  .glyphicon-remove-sign:before {
-    content: "\e083";
-  }
-  .glyphicon-ok-sign:before {
-    content: "\e084";
-  }
-  .glyphicon-question-sign:before {
-    content: "\e085";
-  }
-  .glyphicon-info-sign:before {
-    content: "\e086";
-  }
+.glyphicon {
+  position: relative;
+
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-home:before {
+  content: "\e021";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+.glyphicon-minus:before {
+  content: "\2212";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
