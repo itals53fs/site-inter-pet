@@ -49,8 +49,8 @@ color: var(--color-grean);
 }
 
 .icon{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50px;
   border: solid 2px var(--color-grean);
   padding: 30px;
@@ -128,7 +128,6 @@ p#sobre{
 }
 
 
-
 .img-circo{
   width: 75px;
   height: 75px;
@@ -159,10 +158,27 @@ p#sobre{
   float: right;
    margin-top: -10px;
   }
+  div.div-prog img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    border: solid 2px #304ffe;
+    display: inline;
+    padding: 5px;
+    margin-top: -45px;
+    float: right;
+  }
+  div.div-prog {
+    font-size: 18px;
+    background-color: #304ffe;
+    border-radius: 20px;
+    text-align: center;
+  }
   footer{
     background-color: #00000033;
     border-top: #3d3b3b solid 1px;
     border-radius: 10px;
+    box-sizing: border-box;
   }
   .footer li{
     display: inline-block;
@@ -264,4 +280,20 @@ span.check-list{
 }
 .glyphicon-remove:before {
   content: "\e014";
+}
+.dev a{
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: solid 2px var(--color-grean);
+  padding: 5px;
+  
+}
+.dev a:hover{
+  color: var(--color-grean);
+  border-bottom: solid 2px var(--color-rockt);
+}
+.dev{
+  display: flex;
+  justify-content: center;
 }

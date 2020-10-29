@@ -27,6 +27,8 @@ const colors = {
   10: '#9f6581',
   11: '#25b6da',
   12: '#616161',
+  13: '#50fa7b',
+  14: '#7159c1',
   get(tag){
     return this[tag] ? this[tag] : this[12];
   }
@@ -34,20 +36,20 @@ const colors = {
 let $span = document.querySelectorAll('ul[data-js="tree"]');
   Array.prototype.forEach.call($span, function(e, i){
     Array.prototype.forEach.call(e.children, (item, index)=>{
-      item.style.borderColor = colors[4]
+      item.style.borderColor = colors[14]
       if(index===0){
-        item.style.backgroundColor = colors[4]
+        item.style.backgroundColor = colors[14]
       }
       if(index>0){
-        item.firstElementChild.style.backgroundColor = colors[0]
+        item.firstElementChild.style.backgroundColor = colors[3]
         let segundaCamada = item.firstElementChild.nextElementSibling.children;
         Array.prototype.forEach.call(segundaCamada, (e)=>{
-          e.style.borderColor = colors[0];
+          e.style.borderColor = colors[3];
           let terceiracamada = e.children;
           
           Array.prototype.forEach.call(terceiracamada, (e, i)=>{
             if(i===0){
-              e.style.backgroundColor = colors[3];
+              e.style.backgroundColor = colors[9];
             }
             
   /*           Array.prototype.forEach.call(e.children, (e, i)=>{

@@ -27,16 +27,16 @@
     'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
   '',
   [
-    { name: 'Ana Paula Nunes'},
-    { name: 'Bianca Bejamim'},
-    { name: 'Crislaine mistica'},
-    { name: 'Diana Alves'},
-    { name: 'Letícia Lana'},
-    { name: 'Natania Luiza'},
-    { name: 'Raul Otoni'},
-    { name: 'Tais Monica'},
-    { name: 'Tales Félix',},
-    { name: 'Tiago Mercês'},
+    { name: 'Ana Paula Nunes', img: '../img/ana'},
+    { name: 'Bianca Bejamim', img: '../img/bianca.jpeg'},
+    { name: 'Crislaine mistica', img: '../img/crislaine.jpeg'},
+    { name: 'Diana Alves', img: '../img/diana.jpeg'},
+    { name: 'Letícia Lana', img: '../img/leticia.jpg'},
+    { name: 'Natania Luiza', img: '../img/natania.jpg'},
+    { name: 'Raul Otoni', img: '../img/raul.png'},
+    { name: 'Tais Monica', img: '../img/tais.jpeg'},
+    { name: 'Tales Félix', img: '../img/tales.png'},
+    { name: 'Tiago Mercês', img: '../img/tiago.jpg'},
   ]
 )
 let biologia = new Pets('PET Biologia', 'Lorem ipsum dolor sit amet,consectetur'+
@@ -50,6 +50,19 @@ let biologia = new Pets('PET Biologia', 'Lorem ipsum dolor sit amet,consectetur'
 { name: '' },
 ]
 )
+let nTec = new Pets('PET- Novas Tecnologias', 'Lorem ipsum dolor sit amet,consectetur'+
+'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
+'',
+[
+{ name: 'ok' },
+{ name: '' },
+{ name: '' },
+{ name: '' },
+{ name: '' },
+]
+)
+
+
 let estrategias = new Pets('PET Estratégias', 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
 '',
 [
@@ -81,11 +94,12 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
 ]
 )
 
-  $pets.appendChild(fragDemais(conexao));
+  $pets.appendChild(frag(conexao));
   $pets.appendChild(fragDemais(biologia));
   $pets.appendChild(fragDemais(estrategias));
   $pets.appendChild(fragDemais(quimica));
   $pets.appendChild(fragDemais(odonto));
+  $pets.appendChild(fragDemais(nTec));
 
   function Pets(title, txt, img, members) {
     this.title = title;
@@ -145,7 +159,7 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
 
     h4.style.color = '#7159c1';
     h42.style.color = '#50fa7b';
-    h4.style.display = 'inline-block'
+    h42.style.display = 'inline-block'
 
     title.textContent = data.title || '.';
     txt.textContent = data.txt;
@@ -180,8 +194,7 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
     div.appendChild(imgPet);
     div.appendChild(title);
     div.appendChild(txt);
-    h4.appendChild(h42);
-    div.appendChild(h4);
+    div.appendChild(h42);
     div.appendChild(ul);
     return div;
   }
