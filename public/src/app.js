@@ -25,10 +25,11 @@
   */
   let conexao = new Pets('PET Conexão dos Saberes', 'Lorem ipsum dolor sit amet,consectetur'+
     'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
-  '',
+  '../img/photo.jpg',
   [
-    { name: 'Ana Paula Nunes', img: '../img/ana'},
+    { name: 'Ana Paula Nunes', img: '../img/ana.jpeg'},
     { name: 'Bianca Bejamim', img: '../img/bianca.jpeg'},
+    { name: 'Ana Cardoso', img: '../img/cardoso.jpeg'},
     { name: 'Crislaine mistica', img: '../img/crislaine.jpeg'},
     { name: 'Diana Alves', img: '../img/diana.jpeg'},
     { name: 'Letícia Lana', img: '../img/leticia.jpg'},
@@ -41,30 +42,41 @@
 )
 let biologia = new Pets('PET Biologia', 'Lorem ipsum dolor sit amet,consectetur'+
 'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
-'',
+'../img/biologia.jpg',
 [
-{ name: 'ok' },
-{ name: '' },
-{ name: '' },
-{ name: '' },
-{ name: '' },
+{ name: 'Sâmia Francielle' },
+{ name: 'João Paulo' },
+{ name: 'Izabela Jardim' },
+{ name: 'Thaísa Mendes' },
+{ name: 'Rebeca Cruz' },
+{ name: 'Alice Garcia'},
+{ name: 'Amarílis Abreu'},
+{ name: 'Nathalia Souza'},
+{ name: 'Talisson da Silva'},
+{ name: 'Karina Aparecida'},
 ]
 )
 let nTec = new Pets('PET- Novas Tecnologias', 'Lorem ipsum dolor sit amet,consectetur'+
 'adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
-'',
+'../img/tecnologias.jpg',
 [
-{ name: 'ok' },
-{ name: '' },
-{ name: '' },
-{ name: '' },
-{ name: '' },
+  { name: 'CELSO AMARAL' },
+  { name: 'GILSON RODRIGUES' },
+  { name: 'RYAN MENDES' },
+  { name: 'JULIANA MARIA' },
+  { name: 'MARCO ANTONIO' },
+  { name: 'HELIO SOARES' },
+  { name: 'GUSTAVO HENRIQUE' },
+  { name: 'MARCO ANTONIO' },
+  { name: 'VIVIANE DA SILVA' },
+  { name: 'VINICIUS TEIXEIRA' },
+  { name: 'THAIS ALVES' },
 ]
 )
 
 
 let estrategias = new Pets('PET Estratégias', 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
-'',
+'../img/etrategias.jpg',
 [
   { name: 'ok' },
   { name: '' },
@@ -74,7 +86,7 @@ let estrategias = new Pets('PET Estratégias', 'Lorem ipsum dolor sit amet,conse
 ]
 )
 let quimica = new Pets('PET Química', 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
-'',
+'../img/quimica.jpg',
 [
   { name: 'ok' },
   { name: '' },
@@ -84,22 +96,30 @@ let quimica = new Pets('PET Química', 'Lorem ipsum dolor sit amet,consectetur a
 ]
 )
 let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ',
-'',
+'../img/odontologia.jpg',
 [
-  { name: 'ok' },
-  { name: '' },
-  { name: '' },
-  { name: '' },
-  { name: '' },
+{ name: 'Paula Cristina' },
+{ name: 'Marianna Miranda' },
+{ name: 'Matheus de Melo' },
+{ name: 'Evelline Murta' },
+{ name: 'Maria Luíza' },
+{ name: 'Lailla Lemes' },
+{ name: 'Célio Leone' },
+{ name: 'Ana Cláudia' },
+{ name: 'Gabriel Botelho ' },
+{ name: 'Gabriela Fonseca' },
+{ name: 'Isabelle D’Angelis' },
+{ name: 'Ana Luiza' },
+{ name: 'Etiane Silva' },
 ]
 )
 
   $pets.appendChild(frag(conexao));
+  $pets.appendChild(fragDemais(odonto));
   $pets.appendChild(fragDemais(biologia));
   $pets.appendChild(fragDemais(estrategias));
-  $pets.appendChild(fragDemais(quimica));
-  $pets.appendChild(fragDemais(odonto));
   $pets.appendChild(fragDemais(nTec));
+  $pets.appendChild(fragDemais(quimica));
 
   function Pets(title, txt, img, members) {
     this.title = title;
@@ -121,7 +141,7 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
     title.textContent = data.title || '.';
     txt.textContent = data.txt;
 
-    imgPet.src = data.imgpet || '../img/icon.png';
+    imgPet.src = data.imgpet || '../img/logo.jpeg';
     h4.textContent = 'Integrantes';
 
     ul.setAttribute('class', 'listStyle')
@@ -164,7 +184,7 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
     title.textContent = data.title || '.';
     txt.textContent = data.txt;
 
-    imgPet.src = data.imgpet || '../img/icon.png';
+    imgPet.src = data.imgpet || '../img/logo.jpeg';
     h4.textContent = 'Integrantes';
     h42.textContent = 'Organização';
 
@@ -180,7 +200,7 @@ let odonto = new Pets('PET Odontologia', 'Lorem ipsum dolor sit amet,consectetur
       let img = document.createElement('img');
       img.setAttribute('class', 'img-circo');
       nome.textContent = item.name || 'Fulano de tal';
-      img.src = item.img || '../img/icon.png';
+      img.src = item.img || '../img/logo.jpeg';
 
       let li = document.createElement('li');
       li.setAttribute('class', 'pet-membros');

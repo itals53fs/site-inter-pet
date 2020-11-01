@@ -175,11 +175,3 @@ background-color: var(--color-grean);
   transform: rotate(45deg);
   transition: 0.5s;
 }
-/* .icon{
-width: 150px;
-height: 150px;
-border-radius: 50px;
-border: solid 2px var(--color-grean);
-padding: 30px;
-margin: 10px;
-} */

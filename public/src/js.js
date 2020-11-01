@@ -40,13 +40,13 @@
   let data = new Date()
   let $spanP = document.querySelectorAll('span[data-js="checkbox"]');
   Array.prototype.forEach.call($spanP, function(item, index){
-    if(data.getDate() >= 12 && (data.getHours() >= 10  || data.getDate() >= 13) && index == 0){
+    if(data.getDate() >= 13 && (data.getHours() >= 21 || data.getDate() >= 14) && index == 0){
       item.setAttribute('class', 'glyphicon glyphicon-ok check-list');
     }
-    if(data.getDate() >= 12 && (data.getHours() >= 10  || data.getDate() >= 13) && index == 1){
+    if(data.getDate() >= 14 && (data.getHours() >= 11  || data.getDate() >= 15) && index == 1){
       item.setAttribute('class', 'glyphicon glyphicon-ok check-list');
     }
-    if(data.getDate() >= 12 && (data.getHours() >= 10  || data.getDate() >= 13) && index == 2){
+    if(data.getDate() >= 14 && (data.getHours() >= 17  || data.getDate() >= 15) && index == 2){
       item.setAttribute('class', 'glyphicon glyphicon-ok check-list');
     }
   })
