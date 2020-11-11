@@ -237,7 +237,11 @@ p#sobre{
   border-radius: 10px;
   box-shadow: 2px 5px  #7159c1;
 }
-  
+  .video{
+    width: 70%;
+    margin-left: 15%;
+    height: 375px;
+  }
 @media(min-width: 768px){
   .flex-content{
     display: flex;
@@ -256,6 +260,14 @@ p#sobre{
     justify-content: center;
     flex-flow: wrap;
     align-items: center;
+   line-height: 26px;
+  }
+}
+@media(max-width:600px){
+  .video{
+    width: 96%;
+    margin-left: 2%;
+    height: auto;
   }
 }
 span.check-list{

@@ -55,7 +55,6 @@ let $span = document.querySelectorAll('ul[data-js="tree"]');
   /*           Array.prototype.forEach.call(e.children, (e, i)=>{
            if(i===0){
              e.style.color = colors[4]
-             console.log(e)
           } 
           
          })*/
