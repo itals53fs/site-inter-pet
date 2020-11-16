@@ -3,35 +3,17 @@
 
   let $pets = document.querySelector('[data-js="membros"]');
 
-/*
-  let conexao = {
-    title: 'PET Conexão dos Saberes',
-    imgpet: '',
-    txt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.',
-    members: [
-      { name: 'Ana Paula Nunes', img: '', org: true },
-      { name: 'Bianca Bejamim', img: '../img/bianca.jpeg' },
-      { name: 'Crislaine mistica', img: '../img/crislaine.jpeg' },
-      { name: 'Diana Alves', img: '../img/diana.jpeg' },
-      { name: 'Letícia Lana', img: '../img/leticia.jpg', org: true },
-      { name: 'Natania Luiza', img: '../img/natania.jpg', org: true },
-      { name: 'Raul Otoni', img: '../img/raul.png' },
-      { name: 'Tais Monica', img: '../img/tais.jpeg' },
-      { name: 'Tales Félix', img: '../img/tales.png', org: true },
-      { name: 'Tiago Mercês', img: '../img/tiago.jpg', org: true },
-    ],
-    tutor: { tutor: '', img: '' },
-  }
-  */
   let conexao = new Pets('PET Conexão dos Saberes', 'A proposta objetiva estimular o desenvolvimento sustentável de comunidades rurais e quilombolas através da integração com a UFVJM.'+
   'Espera-se fomentar a formação de profissionais de nível superior, que estejam envolvidos direta e indiretamente com o PET, nas diversas áreas do conhecimento, dotados de elevados padrões científicos, técnicos, éticos e com responsabilidade social, que sejam capazes de uma atuação no sentido da transformação da realidade do Vale do Jequitinhonha, em especial de sua comunidade rural ou quilombola.',
   '../img/photo.jpg',
   [
     { name: 'Ana Paula Nunes', img: '../img/ana.jpeg'},
-    { name: 'Bianca Bejamim', img: '../img/bianca.jpeg'},
     { name: 'Ana Cardoso', img: '../img/cardoso.jpeg'},
+    { name: 'Bianca Bejamim', img: '../img/bianca.jpeg'},
     { name: 'Crislaine mistica', img: '../img/crislaine.jpeg'},
     { name: 'Diana Alves', img: '../img/diana.jpeg'},
+    { name: 'Isabela Cristina', img: '../img/isabela.jpg'},
+    { name: 'Karine Santos', img: '../img/karine.jpeg'},
     { name: 'Letícia Lana', img: '../img/leticia.jpg'},
     { name: 'Natania Luiza', img: '../img/natania.jpg'},
     { name: 'Raul Otoni', img: '../img/raul.png'},
